@@ -1,4 +1,4 @@
-package com.freeman.partyplanner;
+package com.freeman.partyplanner.Model;
 
 import jakarta.persistence.*;
 
@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.UUID;
 
 @Entity
-public class    Party {
+public class Party {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;

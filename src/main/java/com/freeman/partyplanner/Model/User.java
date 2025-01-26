@@ -1,4 +1,4 @@
-package com.freeman.partyplanner;
+package com.freeman.partyplanner.Model;
 
 import jakarta.persistence.*;
 import java.util.List;

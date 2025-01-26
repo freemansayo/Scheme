@@ -1,4 +1,4 @@
-package com.freeman.partyplanner;
+package com.freeman.partyplanner.Model;
 
 import jakarta.persistence.Embeddable;
 
@@ -13,6 +13,17 @@ public class PartyList {
 
 
     // Getters and setters
+    public PartyList(String partyName, int rsvp, float debt, UUID idOfParty) {
+        this.partyName = partyName;
+        this.rsvp = rsvp;
+        this.debt = debt;
+        this.idOfParty = idOfParty;
+    }
+
+    public PartyList() {
+
+    }
+
     public String getPartyName() { return partyName; }
 
     public void setPartyName(String partyName) { this.partyName = partyName; }
