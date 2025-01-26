@@ -15,8 +15,12 @@ public class    Party {
     private LatLng cords;
     @ElementCollection
     private List<String> members;
+    private String nameOfParty;
 //    @ElementCollection
 //    private List<String> items;
+
+    public String getNameOfParty() { return nameOfParty; }
+    public void setNameOfParty(String nameOfParty) { this.nameOfParty = nameOfParty; }
 
     public LatLng getCords() {
         return cords;
