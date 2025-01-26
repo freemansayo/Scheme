@@ -11,13 +11,24 @@ public class    Party {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
     private String location;
-    private Long date;
+    private String date;
     private LatLng cords;
-    @ElementCollection
-    private List<String> members;
     private String nameOfParty;
+    @ElementCollection
+    private List<Chat> chat;
+    @ElementCollection
+    private List<Item> item;
 //    @ElementCollection
 //    private List<String> items;
+
+
+    public List<Item> getItem() {
+        return item;
+    }
+
+    public void setItem(List<Item> item) {
+        this.item = item;
+    }
 
     public String getNameOfParty() { return nameOfParty; }
     public void setNameOfParty(String nameOfParty) { this.nameOfParty = nameOfParty; }
@@ -25,6 +36,14 @@ public class    Party {
     public LatLng getCords() {
         return cords;
     }
+    public List<Chat> getChat() {
+        return chat;
+    }
+
+    public void setChat(List<Chat> chat) {
+        this.chat = chat;
+    }
+
 
 //    public List<String> getItems() {
 //        return items;
@@ -58,19 +77,12 @@ public class    Party {
         this.location = location;
     }
 
-    public Long getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Long date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
-    public List<String> getMembers() {
-        return members;
-    }
-
-    public void setMembers(List<String> members) {
-        this.members = members;
-    }
 }
