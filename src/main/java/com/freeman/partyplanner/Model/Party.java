@@ -45,13 +45,6 @@ public class Party {
     }
 
 
-//    public List<String> getItems() {
-//        return items;
-//    }
-//
-//    public void setItems(List<String> items) {
-//        this.items = items;
-//    }
 
     public void setCords(LatLng cords) {
         this.cords = cords;
